@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>My website</title>
+	</head>
+
+	
+	</header>
+		<nav>
+			<ul>				
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Projects.html">Projects</a></li>	
+				<li><a href="About me.html">About me</a></li>
+				<li><a href="Contact.html">Contact</a></li>			
+			</ul>
+		</nav>
+	</header>
+	
+	
+	
+	
+	<body>
+	<div class="wrappercontact">
+		<section>
+			<h1> Please, fill in the form bellow with your information</h1>
+			<h3> All the information bellow is required</h3>
+
+			<form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
+					<input type="hidden" 
+					name="send_to" 
+					value="regis_camassola@Outlook.com">
+					
+				
+					<legend>Your Contact information</legend>
+					<label for="Given name"> Given name:</label>
+					<input type="text" id="Given name" name="Given name" placeholder="Enter your Given name">
+
+					<label for="Surname">Surname:</label>
+					<input type="text" id="Surname" name="Surname" placeholder="Enter your Surname">
+
+					<label for="Phone">Phone number</label>
+					<input type="tel" id="Phone" name="Phone" placeholder="Enter your email">
+
+					<label for="Email">Email address</label>
+					<input type="Email" id="Email" name="Email" placeholder="Enter your email address">
+				
+
+				
+					<legend>Where did you here about my work?</legend>
+					<label for="Where">Please select one</label>
+					<select id="Where" name="Where">
+
+						<option selected>Select one</option>
+
+						<option value="Linkedin">Linkedin</option>
+
+						<option value="Facebook">Facebook</option>
+
+						<option value="Another">Another social media</option>
+
+						<option value="Word">Word of mouth</option>	
+
+					</select>
+				
+
+				<fieldset>
+					<legend>Your message</legend>
+					<label for="comments">Use the box bellow to write any special request</label>
+					<textarea id="comments" name="comments" placeholder="Type your message here"></textarea>
+				</fieldset>
+
+				<label>
+					<input type="checkbox" name="subscribe" checked> I want to receive news every week
+				</label>
+
+				<button type="submit">Submit form</button>
+
+			</form>
+		</section>
+
+
+		<aside>
+			<address>
+				<p>23 Lugard Road | SE15 2TB | LONDON<p>
+				<p>+44 07493 110493</p>
+				<p>regis_camassola@outlook.com</p>
+			</address>
+
+		</aside>
+		
+	</div>
+	</body>
+	</html>
